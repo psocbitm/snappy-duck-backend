@@ -19,6 +19,9 @@ export const setupApp = async () => {
     });
     await setupRedis();
     await initConsumer();
+    logger.info({
+      log: "Redis setup complete",
+    });
     // Socket
     const server = http.createServer(app);
     logger.info({

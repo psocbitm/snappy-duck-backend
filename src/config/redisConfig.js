@@ -1,16 +1,11 @@
 export const redisConfig = {
   redisQueue: {
-    url: "redis://localhost:6379", // For queuing code from WebSocket
+    url: "rediss://red-cvrb2ba4d50c73all4j0:EARIt7ArKxXZvU7R8cBoiFpnI9ZQZUwQ@oregon-keyvalue.render.com:6379", // For queuing code from WebSocket
   },
   redisDB: {
-    username: "ashx",
-    password: "Smsgtjs@010",
-    socket: {
-      host: "redis-13094.c301.ap-south-1-1.ec2.redns.redis-cloud.com",
-      port: 13094,
-    },
+    url: "rediss://red-cvrb2ba4d50c73all4ig:8UAub54rzYiktI2RNpDhxz6d2B7cn5l4@oregon-keyvalue.render.com:6379",
   },
   redisPubSub: {
-    url: "redis://localhost:6381", // For pub/sub to receive executed code
+    url: "rediss://red-cvrb2ba4d50c73all4i0:Ez61K69KSZCb2MUQ42TcwIlwAbee7pXf@oregon-keyvalue.render.com:6379", // For pub/sub to receive executed code
   },
 };

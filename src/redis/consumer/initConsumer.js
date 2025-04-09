@@ -4,12 +4,8 @@ import { getFromDB } from "../db/getFromDB.js";
 import { removeFromDB } from "../db/removeFromDB.js";
 import { redisPubSub } from "../redisSetup.js";
 const logger = getLogger(import.meta.url);
-export const initConsumer = async (job) => {
+export const initConsumer = async () => {
   try {
-    logger.info({
-      log: "Consuming job",
-      job: job,
-    });
     const listener = async (message) => {
       logger.info({
         log: "Received message",
