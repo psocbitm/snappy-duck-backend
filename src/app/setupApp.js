@@ -13,6 +13,13 @@ export const setupApp = async () => {
     app.use(express.json());
     app.use(cors());
 
+    // health check
+    app.get("/health", (req, res) => {
+      res.status(200).json({
+        status: "ok",
+      });
+    });
+
     // Redis
     logger.info({
       log: "Setting up Redis",
